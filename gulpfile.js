@@ -29,7 +29,7 @@ gulp.src('dev/css/**/*.css')
 .pipe(connect.reload());	
 });
 gulp.task('html',function(){
-	gulp.src('dev/css/**/*.html')
+	gulp.src('dev/**/*.html')
 .pipe(includer())
 .pipe(replace({
 	css:'css/style.css'
@@ -45,6 +45,6 @@ gulp.start('css','html','server');
 gulp.watch(['dev/css/**/*.css'], function(){
 gulp.start('css');
 });
-gulp.watch(['dev/html/**/*.html'], function(){
+gulp.watch(['dev/**/*.html'], function(){
 gulp.start('html');
 });
