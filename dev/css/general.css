@@ -1,3 +1,110 @@
 body{
-	background-color:green;
+	background-color:#fbfbfb;
+	
+}
+#menu li{
+	position:relative;
+	display:inline-block;
+	width:117px;
+	height:62px;
+	
+}
+header{
+		width:1350px;
+	margin: 50px auto !important;
+text-align:center;	
+}
+#menu{
+	padding-left:0;
+	font-size:0;
+}
+#menu a{	
+	text-transform:capitalize;
+	font-size:15px;
+	text-decoration:none;
+	position:relative;
+	color:black;
+}
+#menu span{
+	display:inline-block;
+	width:117px;
+	padding-top:40px;
+	position:absolute;	
+    top:0;
+	left:-175%;
+    text-align:center;
+}
+.sprite{
+	vertical-align:top;
+	position:relative;
+	margin:5px auto;
+	display:inline-block;
+}
+.sprite:before{
+    position:absolute;
+	content:'';
+	background-color:grey;
+	left:-50px;
+	top:9px;
+	display:inline-block;
+	width:46px;
+	height:5px;
+}
+.sprite:after{
+	position:absolute;
+	content:'';
+	background-color:grey;
+	right:-50px;
+	top:9px;
+	display:inline-block;
+	width:46px;
+	height:5px;
+}
+#menu a:hover{
+	color:gold;
+}
+#sub{
+	width:166px;
+}
+#sub li{
+		background-color:white;
+	position:relative;
+	box-sizing:border-box;
+	border:1px solid #eeeeee;
+	margin-top:6px;
+	width:80px;
+	height:70px;
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+}
+#sub li:first-child{
+	margin-bottom:0px;
+}
+#sub li:nth-child(odd){
+	margin-right:6px;
+}
+#sub a{
+	margin-top:10px;
+	text-decoration:none;
+    color:black;
+	display:inline-block;
+}
+.name{
+position:absolute;
+	top:0;
+	left:0;
+	box-sizing:border-box;
+	width:80px;
+	height:70px;
+	padding-top:45px;
+	color:#767676;
+	font:12px "tahoma";
+}
+.name:hover{
+	color:white;
+	
+}
+#sub li:hover{
+background-color:grey;
 }

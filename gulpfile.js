@@ -7,12 +7,12 @@ var livereload = require ('gulp-livereload');
 var spritecreator = require ('gulp.spritesmith');
 gulp.task('sprite', function(){
    var spriteData = gulp.src('dev/img/icons/*.png').pipe(spritecreator({
-	   imgName:'sprite.png',
+	   imgName:	'sprite.png',
 	   cssName: 'sprite.css',
 	   algorithm: 'binary-tree',
    }));
    spriteData.img.pipe(gulp.dest('build/img/'));
-   spriteData.css.pipe(gulp.dest('build/css/'));
+   spriteData.css.pipe(gulp.dest('dev/css/'));
 	
 });
 gulp.task('server', function(){
